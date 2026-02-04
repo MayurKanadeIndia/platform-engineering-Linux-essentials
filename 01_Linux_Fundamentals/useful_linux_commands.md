@@ -99,3 +99,46 @@
 #### The variables declared by the user are always in the "SMALL CASES" like `$flower`
 
 #### The variables decalred by the system are always in the "UPPER CASES" like `$HOME`
+
+---
+
+### How to check the which is the current terminal in use and by which user then use command `tty` for the same.
+
+![alt text](images/tty_1.PNG)
+
+---
+
+#### The default boot load of any system is checked by the following command.
+
+- `systemctl get-default`
+
+#### The default boot load can be modify by the following command.
+
+- `systemctl set-default <target_name>`
+- e.g. `systemctl set-default multi-user.target`
+
+![alt text](images/boot_load.PNG)
+
+#### Note: If default booting mode is GUI (graphical.target) then only 5 text virtual console plus 1 graphic console is available on `(<ctrl + alt + F1>)` these consoles can be accessed by using the keys from (F1 to F6) keys.
+
+#### Defualt GUI Mode (graphical.target)
+
+`<ctrl + alt + f1>` graphic console (pts)
+`<ctrl + alt + f2>` virtual console 2 (tty1)
+`<ctrl + alt + f3>` virtual console 3 (tty2)
+`<ctrl + alt + f4>` virtual console 4 (tty3)
+`<ctrl + alt + f5>` virtual console 5 (tty4)
+`<ctrl + alt + f6>` virtual console 6 (tty5)
+
+#### If you are default booting mode is text (multi-user.target), then default virtual 6 consoles are available. You can get the graphical console by running "startx" on "tty1", then graphic console will be available on `(<ctrl> + alt + F1)`
+
+#### Defualt text Mode (multi-user.target)
+
+`<ctrl + alt + f1>` graphic console (tty1)
+`<ctrl + alt + f2>` virtual console 2 (tty2)
+`<ctrl + alt + f3>` virtual console 3 (tty3)
+`<ctrl + alt + f4>` virtual console 4 (tty4)
+`<ctrl + alt + f5>` virtual console 5 (tty5)
+`<ctrl + alt + f6>` virtual console 6 (tty6)
+
+---
