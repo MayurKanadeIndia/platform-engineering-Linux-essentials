@@ -35,6 +35,7 @@
 - If the kernel is compressed then it's named as `vmlinuz` ends in `z`. In this example we have the kernel is compressed and named as `vmlinuz-6.8.0-1047-gcp`
 - The kernel ring buffer contains messges related to the linux kernel. A ring buffer is a `data structure` that is always the same size. Once the buffer is completely full, old messages are discarded when new messages arrive.
 - To see the contents of the kernel ring buffer we use `dmesg` command.
+  ![alt text](images/dmesg_command.PNG)
 - In most Linux, these message are stored on the following path:
   `/var/log/dmesg`
 - Between `dmesg` command and `/var/log/dmesg` log file, you will be see the messages the kernel is generating even during the earliest stages of the boot process, when those messages can quickly fly by your screen on boot up.
