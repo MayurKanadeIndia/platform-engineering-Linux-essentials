@@ -92,3 +92,5 @@
 ---
 
 ---
+
+#![alt text](images/bios_process.png)
