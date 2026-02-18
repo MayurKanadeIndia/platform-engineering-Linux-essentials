@@ -153,3 +153,7 @@ include `/etc/logrotate.d`
 
 - `[option f]` - tells logrotate to force a rotation.
 - `[option v]` - tells logrotate the verbose logging.
+
+---
+
+## ![alt text](images/linux_syslog.png)
