@@ -93,4 +93,4 @@
 
 ---
 
-#![alt text](images/bios_process.png)
+## ![alt text](images/boot_process.png)
